@@ -66,6 +66,4 @@ Rezultate
 
 Regresia Liniară: Oferă predicții de bază.
 
-Random Forest: Oferă o performanță îmbunătățită.
-
 Heatmap-ul corelațiilor dezvăluie relațiile dintre variabile precum day_local, month_local și nivelurile calității aerului.
