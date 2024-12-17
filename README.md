@@ -1,69 +1,67 @@
 # Proiect de Predicție a Calității Aerului
 
-Prezentare Generală
+## Prezentare Generală
 
 Acest proiect analizează și prezice nivelurile calității aerului folosind modele de învățare automată precum Regresia Liniară și Random Forest. Setul de date include măsurători ale calității aerului, cum ar fi arithmetic_mean și alte caracteristici precum componentele datei (day_local, month_local). Modelele sunt antrenate pentru a prezice calitatea aerului și pentru a evalua corelațiile dintre variabile.
 
-Funcționalități Cheie
+## Funcționalități Cheie
 
-Pregătirea Datelor:
+1. Pregătirea Datelor:
 
-Gestionarea valorilor lipsă.
+    * Gestionarea valorilor lipsă.
 
-Transformarea caracteristicilor brute folosind VectorAssembler.
+    * Transformarea caracteristicilor brute folosind VectorAssembler.
 
-Modele de Învățare Automată:
+2. Modele de Învățare Automată:
 
-Regresia Liniară: Prezice calitatea aerului pe baza caracteristicilor de intrare.
+    * Regresia Liniară: Prezice calitatea aerului pe baza caracteristicilor de intrare.
 
-Random Forest Regressor: Îmbunătățește acuratețea prin metode de ansamblu.
+3. Metrici de Evaluare:
 
-Metrici de Evaluare:
+    * Eroarea Pătratică Medie (RMSE).
 
-Eroarea Pătratică Medie (RMSE).
+    * Predicțiile modelelor sunt reprezentate grafic pentru vizualizare.
 
-Predicțiile modelelor sunt reprezentate grafic pentru vizualizare.
+4. Analiza Corelațiilor:
 
-Analiza Corelațiilor:
+    * Generează o matrice de corelație pentru a studia relațiile dintre variabile.
 
-Generează o matrice de corelație pentru a studia relațiile dintre variabile.
+    * Rezultatele sunt afișate sub formă de heatmap pentru o interpretare ușoară.
 
-Rezultatele sunt afișate sub formă de heatmap pentru o interpretare ușoară.
+## Cerințe
 
-Cerințe
+* Python 3.8+
 
-Python 3.8+
+* PySpark
 
-PySpark
+* Pandas
 
-Pandas
+* Matplotlib
 
-Matplotlib
+* Seaborn
 
-Seaborn
+## Cum se Rulează
 
-Cum se Rulează
+1. Instalează Dependențele:
+    ```
+    pip install pyspark pandas matplotlib seaborn
+    ```
+2. Rularea Proiectului:
 
-Instalează Dependențele:
+    * Încarcă setul de date.
 
-pip install pyspark pandas matplotlib seaborn
+    * Rulează scriptul pentru a antrena modelele, a evalua rezultatele și a afișa vizualizările.
 
-Rularea Proiectului:
+3. Rezultate Așteptate:
 
-Încarcă setul de date.
+    * Metrici de performanță ale modelelor (RMSE).
 
-Rulează scriptul pentru a antrena modelele, a evalua rezultatele și a afișa vizualizările.
+    * Predicții alături de valorile reale.
 
-Rezultate Așteptate:
+    * Heatmap de corelație.
 
-Metrici de performanță ale modelelor (RMSE).
+## Rezultate
 
-Predicții alături de valorile reale.
+  * Regresia Liniară: Oferă predicții de bază.
 
-Heatmap de corelație.
-
-Rezultate
-
-Regresia Liniară: Oferă predicții de bază.
-
-Heatmap-ul corelațiilor dezvăluie relațiile dintre variabile precum day_local, month_local și nivelurile calității aerului.
+  * Heatmap-ul corelațiilor dezvăluie relațiile dintre variabile precum day_local, month_local și nivelurile calității aerului.
